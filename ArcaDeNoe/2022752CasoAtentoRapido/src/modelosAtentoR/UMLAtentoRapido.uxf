@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>370</y>
+      <w>230</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Cuadro
+--
+cuadrosVisibles: int
+--
+devolverCuadrosVisibles(): int
+bg=black</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>510</x>
+      <y>20</y>
+      <w>230</w>
+      <h>420</h>
+    </coordinates>
+    <panel_attributes>ControlCuadro
+--
+cuadro1
+imagenesCuadros[8]
+var -&gt; cuadros iniciales.
+presionarBoton
+identificadorPares
+Player jugador
+Vector posicionesIguales
+Vector pintarPrimerCuadro
+--
+buscarElementos()
+getCuadros()
+iniciarCuadros()
+inicializarVector()
+inicializarCuadros()
+cambiosCuadros()
+impares()
+pares()
+click()
+devolverVida()
+devolverPuntaje()
+devolverAciertos()
+devolverErrores()
+cuadrosPares()
+clickear()
+noClickear()
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>330</y>
+      <w>220</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m2= 2</panel_attributes>
+    <additional_attributes>200.0;10.0;200.0;40.0;10.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>100</y>
+      <w>120</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>PrincipalAtentoR
+--
+main()
+bg=light_gray</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>410</x>
+      <y>0</y>
+      <w>120</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+</panel_attributes>
+    <additional_attributes>100.0;20.0;10.0;20.0;50.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>60</x>
+      <y>20</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0;190.0;10.0;100.0;40.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>210</y>
+      <w>120</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>VentanaMensaje
+--
+iconoEstado
+mensajeSalida
+botonOK
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>160</x>
+      <y>60</y>
+      <w>300</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>vistaGUIAtento
+--
+imagenCuadros[8]
+botonLanzar
+mensajeM
+vida
+score
+errores
+imagen
+escucha
+ControlCuadro controlCuadros;
+tiempo
+--
+VistaGUIAtento()
+initGUI()
+restricciones()
+cuadrosBases()
+actionPerformed()
+bg=blue</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
